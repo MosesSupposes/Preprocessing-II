@@ -1,4 +1,7 @@
 .home {
+  @media @mobile {
+    text-align: center;
+  }
 
   .main-header {
     display: flex;
@@ -8,6 +11,13 @@
     align-items: baseline;
     padding: 1rem 6rem;
 
+    @media @mobile {
+      flex-wrap: wrap;
+
+        .main-title {
+          margin: 0 auto;
+        }
+    }
   }
 
   .content-section {
@@ -15,6 +25,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media @mobile {
+      & > * {
+        width: 100%;
+        flex-basis: 100%;
+      }
+
+      .text-content:not(:first-child) {
+        margin-top: 2rem;
+      }
+
+    }
 
     &.welcome {
       margin: 0 0 30px;
@@ -75,12 +97,25 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-wrap: wrap;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+        width: 100%;
+        flex-basis: 100%;
+      }
+
       .btn {
         .custom-btn();
+
+        @media @mobile {
+          margin: 0 auto;
+        }
       }
     }
   }
