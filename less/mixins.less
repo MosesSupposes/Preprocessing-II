@@ -3,3 +3,13 @@
 .dashed-bottom(@thickness:2px, @color:@silver ) {
     border-bottom: @thickness dashed @color
 }
+
+.custom-btn(@bg-color:@button-bg) {
+    font-size: 1.5rem;
+    background: darken(@bg-color, 10%);
+    color: @white;
+    padding: 1rem;
+    border-radius: 15px;
+    width: 50%;
+    text-align: center;
+}

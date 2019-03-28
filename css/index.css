@@ -192,6 +192,7 @@ img {
 }
 .home .main-header {
   display: flex;
+  width: 100%;
   border-bottom: 2px dashed #C0C0C0;
   justify-content: space-between;
   align-items: baseline;
@@ -252,4 +253,13 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  font-size: 1.5rem;
+  background: #117a8b;
+  color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 15px;
+  width: 50%;
+  text-align: center;
 }
